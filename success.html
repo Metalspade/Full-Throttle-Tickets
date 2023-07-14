@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Booking Success</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Delicious+Handrawn&family=Homemade+Apple&family=Indie+Flower&family=La+Belle+Aurore&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Script&family=Nanum+Myeongjo&family=Press+Start+2P&family=Quicksand&family=Righteous&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="success.css" />
+  </head>
+  <body>
+    <section class="booking-success-section">
+      <div class="booking-success-modal">
+        <h2 class="heading-sucess">BOOKING SUCCESSFUL!</h2>
+        <div class="container-wrapper">
+          <div class="container">
+            <form id="ticket-form">
+              <div class="ticket-details">
+                <div class="col-lg-4 col-lg-4 col-12">
+                  <h3>Full Throttle<br />Tickets</h3>
+                
+                </div>
+                <div class="col-lg-8 col-lg-8 col-12">
+                  <div id="event-details"></div>
+                  <p>
+                    <strong>Name:</strong> <span class="ticket-name"></span>
+                  </p>
+                  <p>
+                    <strong>Email:</strong> <span class="ticket-email"></span>
+                  </p>
+                  <p>
+                    <strong>Admit:</strong>
+                    <span class="ticket-number"></span>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="nav-buttons">
+        <button
+          href="events.html"
+          class="btn btn-primary"
+          id="backToEvents"
+          onclick="closeModal()"
+        >
+          Back to Events
+        </button>
+     </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="success.js"></script>
+  </body>
+</html>

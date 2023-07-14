@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Ticket Form</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet" />
+    <!--
+
+
+-->
+  </head>
+
+  <body style background="color:black">
+    <main>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Confirmation Station</a>
+
+          <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4"
+            >Buy Ticket</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="events.html">Events</a>
+              </li>
+
+          </div>
+        </div>
+      </nav>
+
+      <section class="ticket-section section-padding">
+        <div class="section-overlay"></div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-10 mx-auto">
+              <form
+                class="custom-form ticket-form mb-5 mb-lg-0"
+                action="#"
+                method="post"
+                role="form"
+              >
+                <h2 class="text-center mb-4">Almost time to Ride..</h2>
+                <h6>Event Details</h6>
+                <div id="event-details"></div>
+                <br />
+                <h6>Customer Details</h6>
+                <div class="ticket-form-body">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label class="customer-name">Name</label>
+                      <input
+                        type="text"
+                        name="ticket-form-name"
+                        id="ticket-form-name"
+                        class="form-control"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label class="email">Email Address</label>
+                      <input
+                        type="email"
+                        name="ticket-form-email"
+                        id="ticket-form-email"
+                        pattern="[^ @]*@[^ @]*"
+                        class="form-control"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <h6>Ticket Price</h6>
+
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label class="price">Price </label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="TicketForm"
+                      />
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label class="quantity">No. of Tickets </label>
+                      <input
+                        type="number"
+                        name="ticket-form-number"
+                        id="ticket-form-number"
+                        class="form-control"
+                        min="1"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                  <label class="total-price">Total </label>
+                  <input
+                    type="total"
+                    name="total-amount"
+                    id="total-amount"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                  <button
+                    type="submit"
+                    class="form-control"
+                    id="buyTicket-button"
+                  >
+                    Lets Ride
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-top">
+          <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-6 col-12">
+                      <h2 class="text-white mb-lg-0">Full Throttle Tickets</h2>
+                  </div>
+
+                  <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                      <ul class="social-icon d-flex justify-content-lg-end">
+                          <li class="social-icon-item">
+                              <a href="#" class="social-icon-link">
+                                  <span class="bi-twitter"></span>
+                              </a>
+                          </li>
+
+                          <li class="social-icon-item">
+                              <a href="#" class="social-icon-link">
+                                  <span class="bi-instagram"></span>
+                              </a>
+                          </li>
+                         
+                          <li class="social-icon-item">
+                              <a href="#" class="social-icon-link">
+                                  <span class="bi-pinterest"></span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-6 col-12 mb-4 pb-2">
+                  <h5 class="site-footer-title mb-3">Coded By</h5>
+
+                  <ul class="site-footer-links">
+                      <li class="site-footer-link-item">
+                          <a href="#" class="site-footer-link">John-hendry Maloney</a>
+                      </li>
+
+                      <li class="site-footer-link-item">
+                          <a href="#" class="site-footer-link">Jarred Von Alleman</a>
+                      </li>
+
+
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                  <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                  <p class="text-white d-flex mb-1">
+                      <a href="tel: 011 495 6285" class="site-footer-link">
+                        011 495 6285
+                      </a>
+                  </p>
+
+                  <p class="text-white d-flex">
+                      <a href="mailto:hello@company.com" class="site-footer-link">
+                          info@fullthrottletickets.com
+                      </a>
+                  </p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                  <h5 class="site-footer-title mb-3">Location</h5>
+
+                  <p class="text-white d-flex mt-3 mb-2">
+                      Dome Randburg</p>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="site-footer-bottom">
+          <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-3 col-12 mt-5">
+                      <p class="copyright-text">Copyright © 2023 Full Throttle Tickets</p>
+                  </div>
+
+                  <div class="col-lg-8 col-12 mt-lg-5">
+                      <ul class="site-footer-links">
+                          <li class="site-footer-link-item">
+                              <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="ticket.js"></script>
+  </body>
+</html>
