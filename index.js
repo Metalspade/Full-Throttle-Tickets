@@ -176,11 +176,7 @@ const events = [
 ];
 
 // Function to render the events
-function renderEvents(
-  eventsToRender,
-  categoryFilter = "paid",
-  dateFilter = "all"
-) {
+function renderEvents(eventsToRender, categoryFilter = "paid", dateFilter = "all") {
   const eventListElement = document.getElementById("event-list");
   eventListElement.innerHTML = "";
 
@@ -193,19 +189,20 @@ function renderEvents(
     // Apply category filter if it is not set to 'all'
     if (categoryFilter === "all" || event.category === categoryFilter) {
       // Apply date filter based on user selection
-      if (dateFilter === "upcoming" && event.date >= currentDate) {
+      if (dateFilter === "all" && event.date >= currentDate) {
+        const eventCard = event.render();
+        eventListElement.appendChild(eventCard);
+      } else if (dateFilter === "upcoming" && event.date >= currentDate) {
         const eventCard = event.render();
         eventListElement.appendChild(eventCard);
       } else if (dateFilter === "passed" && event.date < currentDate) {
-        const eventCard = event.render();
-        eventListElement.appendChild(eventCard);
-      } else if (dateFilter === "all") {
         const eventCard = event.render();
         eventListElement.appendChild(eventCard);
       }
     }
   });
 }
+
 
 // Function to handle search event
 function handleSearch() {
